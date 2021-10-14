@@ -1,6 +1,14 @@
 const express = require('express');
 const app = express();
 
+var API = require('currency-conversion');
+var api = new API({
+	access_key: "06733332035cb1889762b42a362c30c7",
+	secure: true
+});
+const CC = require('currency-converter-lt')
+let currencyConverter = new CC()
+
 const config = require('./config.js');
 
 var useragent = require('express-useragent');
@@ -45,10 +53,14 @@ const WSS = require("ws").Server;
 const wss = new WSS({ port: 3001 });
 
 wss.on('connection', (ws) => {
-    ws.send("Hejo")
     ws.on('message', (msg) => {
         const args = msg.toString().split(',');
         console.log(args);
+        
+        currencyConverter.from(args[1]).to(args[2]).amount(parseInt(args[0])).convert().then((response) => {
+            console.log(response)
+            ws.send(response.toString().replace("NaN", ''));
+        })
 
     })
 })

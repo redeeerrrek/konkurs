@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/redeeerrrek/dewiza.xyz#readme",
   "dependencies": {
+    "currency-conversion": "^0.2.4",
+    "currency-converter-lt": "^1.1.4",
     "discord.js": "^13.2.0",
     "express": "^4.17.1",
     "express-useragent": "^1.0.15",
