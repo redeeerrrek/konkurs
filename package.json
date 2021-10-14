@@ -1,0 +1,29 @@
+{
+  "name": "dewiza.xyz-konkurs",
+  "version": "1.0.0",
+  "description": "Strona z rankingiem, przelicznikiem kryptowalut na informatykę.",
+  "main": "app.js",
+  "scripts": {
+    "app": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redeeerrrek/dewiza.xyz.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "rederek#8600 | Jakub Jaworski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redeeerrrek/dewiza.xyz/issues"
+  },
+  "homepage": "https://github.com/redeeerrrek/dewiza.xyz#readme",
+  "dependencies": {
+    "discord.js": "^13.2.0",
+    "express": "^4.17.1",
+    "express-useragent": "^1.0.15",
+    "pug": "^3.0.2",
+    "ws": "^8.2.3"
+  }
+}

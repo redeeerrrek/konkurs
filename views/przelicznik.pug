@@ -1,0 +1,92 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Dewiza.xyz
+  meta(name='description' content='Dewiza - projekt pozwalający na szybkie przeliczenie walut lub sprawdzenie ich rankingu.')
+  meta(name='author' content='Jakub Jaworski')
+  meta(property='og:title' content='Dewiza - Ranking i Przelicznik Walut')
+  meta(property='og:type' content='website')
+  meta(property='og:url' content='https://dewiza.xyz/')
+  meta(property='og:description' content='Dewiza - projekt pozwalający na szybkie przeliczenie walut lub sprawdzenie ich rankingu.')
+  meta(property='og:image' content='https://cdn.discordapp.com/attachments/702205948877602869/897864601083977818/smallicon.png')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Gluten&display=swap' rel='stylesheet')
+  link(rel='icon' href='https://cdn.discordapp.com/attachments/702205948877602869/897864601083977818/smallicon.png')
+  link(rel='apple-touch-icon' href='https://cdn.discordapp.com/attachments/702205948877602869/897864601083977818/smallicon.png')
+  script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+  style
+    include przelicznik.css
+body
+.container
+  .row1
+    #ch1.choose
+      select#from
+        option(value="pln") PLN
+        option(value="usd") USD
+        option(value="eur") EUR
+        option(value="gbp") GBP
+        option(value="chf") CHF
+        option(value="aed") AED
+        option(value="aud") AUD
+        option(value="bgn") BGN
+        option(value="cad") CAD
+        option(value="cny") CNY
+        option(value="czk") CZK
+        option(value="dkk") DKK
+        option(value="hkd") HKD
+        option(value="hrk") HRK
+        option(value="huf") HUF
+        option(value="ils") ILS
+        option(value="jpy") JPY
+        option(value="mxn") MXN
+        option(value="nok") NOK
+        option(value="nzd") NZD
+        option(value="ron") RON
+        option(value="rsd") RSD
+        option(value="rub") RUB
+        option(value="sek") SEK
+        option(value="sgd") SGD
+        option(value="thb") THB
+        option(value="try") TRY
+        option(value="zar") ZAR
+    input.ipt#ipt1
+  .row2
+    #ch2.choose
+      select#to
+        option(value="usd") USD
+        option(value="pln") PLN
+        option(value="eur") EUR
+        option(value="gbp") GBP
+        option(value="chf") CHF
+        option(value="aed") AED
+        option(value="aud") AUD
+        option(value="bgn") BGN
+        option(value="cad") CAD
+        option(value="cny") CNY
+        option(value="czk") CZK
+        option(value="dkk") DKK
+        option(value="hdk") HKD
+        option(value="hrk") HRK
+        option(value="huf") HUF
+        option(value="ils") ILS
+        option(value="jpy") JPY
+        option(value="mxn") MXN
+        option(value="nok") NOK
+        option(value="nzd") NZD
+        option(value="ron") RON
+        option(value="rsd") RSD
+        option(value="rub") RUB
+        option(value="sek") SEK
+        option(value="sgd") SGD
+        option(value="thb") THB
+        option(value="try") TRY
+        option(value="zar") ZAR
+    input.ipt#ipt2(disabled=true)
+  .button
+    button#btn Przelicz
+
+  script
+    include przelicznik.js
+

@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-image: url(https://cdn.discordapp.com/attachments/898174457548529718/898190778529087509/money-2696228_1920.jpg);
+    background-size: cover;     
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.button {
+    border: 1px solid red;
+    min-height: 350px;
+    height: 29%;
+    width: 30%;
+    border-radius: 2%;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    transform: scale3d(1.1);
+    cursor: pointer;
+}
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+#btn1 {
+    background-image: url(https://cdn.discordapp.com/attachments/854399663368044554/898193049212043264/new_ranking.jpg);
+    background-size: cover;     
+    background-repeat: no-repeat;   
+}
+#btn2 {
+    margin-left: 30px;
+    background-image: url(https://cdn.discordapp.com/attachments/854399663368044554/898193044237615165/new_kalkulator.jpg);
+    background-size: cover;     
+    background-repeat: no-repeat;   
+}
+h1, h2 {
+    font-family: 'Amatic SC';
+    text-align: center;
+    font-size: 5em;
+    color: rgb(19, 3, 109);
+}
+h1::selection {
+    color: #fff;
+}
+h2::selection {
+    color: #fff;
+}
+p {
+    font-family: Gluten;
+    text-align: center;
+    font-size: 4em;
+    color: rgb(7, 250, 120);
+}
+p::selection{
+
+    color: rgb(48, 13, 245);
+    
+}
