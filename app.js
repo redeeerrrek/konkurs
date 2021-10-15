@@ -5,9 +5,10 @@ var API = require('currency-conversion');
 var api = new API({
 	access_key: "06733332035cb1889762b42a362c30c7",
 	secure: true
-});
+}); // do statystyk i rankingów.
+
 const CC = require('currency-converter-lt')
-let currencyConverter = new CC()
+let currencyConverter = new CC() // do konwersji
 
 const config = require('./config.js');
 
